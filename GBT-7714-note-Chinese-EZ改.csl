@@ -254,7 +254,7 @@
                    <text variable="URL"/>
                   </if>
                   <else>
-                    <text variable="container-title" text-case="title"/>
+                    <text variable="container-title" text-case="title" suffix=". "/>
                     <text macro="title"/>
                    <text macro="issued-date" prefix=". (" suffix=")"/>
                    <text macro="accessed-date" suffix=". "/>
@@ -347,7 +347,7 @@
                    <text variable="URL"/>
                   </if>
                   <else>
-                    <text variable="container-title" text-case="title"/>
+                    <text variable="container-title" text-case="title" suffix=". "/>
                     <text macro="title"/>
                    <text macro="issued-date" prefix=". (" suffix=")"/>
                    <text macro="accessed-date" suffix=". "/>
@@ -443,7 +443,7 @@
                    <text variable="URL"/>
                   </if>
                   <else>
-                    <text variable="container-title" text-case="title"/>
+                    <text variable="container-title" text-case="title" suffix=". "/>
                     <text macro="title"/>
                    <text macro="issued-date" prefix=". (" suffix=")"/>
                    <text macro="accessed-date" suffix=". "/>
@@ -537,7 +537,7 @@
                    <text variable="URL"/>
                   </if>
                   <else>
-                    <text variable="container-title" text-case="title"/>
+                    <text variable="container-title" text-case="title" suffix=". "/>
                     <text macro="title"/>
                    <text macro="issued-date" prefix=". (" suffix=")"/>
                    <text macro="accessed-date" suffix=". "/>
