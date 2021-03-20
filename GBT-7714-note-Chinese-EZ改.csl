@@ -20,8 +20,8 @@
       <term name="anonymous">佚名</term>
       <term name="edition">版</term>
       <term name="page" form="short">
-        <single>p.</single>
-        <multiple>pp.</multiple>
+        <single> </single>
+        <multiple> </multiple>
       </term>
     </terms>
   </locale>
@@ -183,7 +183,7 @@
     <layout locale="en" suffix="." delimiter="; ">
       <choose>
         <if position="ibid-with-locator">
-          <text term="ibid"/>
+          <text term="ibid" prefix=", "/>
           <label variable="locator" form="short"/>
           <text variable="locator"/>
         </if>
@@ -192,8 +192,7 @@
         </else-if>
         <else-if position="subsequent">
           <text variable="first-reference-note-number" prefix="同" suffix=""/>
-          <label variable="locator" form="short"/>
-          <text variable="locator"/>
+          <text variable="locator" prefix=", "/>
         </else-if>
         <else-if type="book bill chapter legislation report thesis" match="any">
           <text macro="author" suffix=". "/>
@@ -278,15 +277,14 @@
         <if position="ibid-with-locator">
           <text term="ibid"/>
           <label variable="locator" form="short"/>
-          <text variable="locator"/>
+          <text variable="locator" prefix=", "/>
         </if>
         <else-if position="ibid">
           <text term="ibid"/>
         </else-if>
         <else-if position="subsequent">
           <text variable="first-reference-note-number" prefix="同" suffix=""/>
-          <label variable="locator" form="short"/>
-          <text variable="locator"/>
+          <text variable="locator" prefix=", "/>
         </else-if>
         <else-if type="book bill chapter legislation report thesis" match="any">
           <text macro="author" suffix=". "/>
@@ -371,20 +369,7 @@
         <layout locale="en" suffix="." delimiter="; ">
         <text variable="citation-number" prefix="[" suffix="]"/>
         <choose>
-        <if position="ibid-with-locator">
-          <text term="ibid"/>
-          <label variable="locator" form="short"/>
-          <text variable="locator"/>
-        </if>
-        <else-if position="ibid">
-          <text term="ibid"/>
-        </else-if>
-        <else-if position="subsequent">
-          <text variable="first-reference-note-number" prefix="同" suffix=""/>
-          <label variable="locator" form="short"/>
-          <text variable="locator"/>
-        </else-if>
-        <else-if type="book bill chapter legislation report thesis" match="any">
+        <if type="book bill chapter legislation report thesis" match="any">
           <text macro="author" suffix=". "/>
           <text macro="title"/>
           <text macro="editor" prefix=". "/>
@@ -400,7 +385,7 @@
               </choose>
               <text macro="edition" suffix=". "/>
               <text macro="publishing"/>
-         </else-if>
+         </if>
          <else-if type="paper-conference" match="any">
           <text macro="author" suffix=". "/>
           <text macro="title"/>
@@ -465,20 +450,7 @@
         <layout suffix="." delimiter="; ">
         <text variable="citation-number" prefix="[" suffix="]"/>
       <choose>
-        <if position="ibid-with-locator">
-          <text term="ibid"/>
-          <label variable="locator" form="short"/>
-          <text variable="locator"/>
-        </if>
-        <else-if position="ibid">
-          <text term="ibid"/>
-        </else-if>
-        <else-if position="subsequent">
-          <text variable="first-reference-note-number" prefix="同" suffix=""/>
-          <label variable="locator" form="short"/>
-          <text variable="locator"/>
-        </else-if>
-        <else-if type="book bill chapter legislation report thesis" match="any">
+        <if type="book bill chapter legislation report thesis" match="any">
           <text macro="author" suffix=". "/>
           <text macro="title"/>
           <text macro="editor" prefix=". "/>
@@ -494,7 +466,7 @@
               </choose>
               <text macro="edition" suffix=". "/>
               <text macro="publishing"/>
-         </else-if>
+         </if>
          <else-if type="paper-conference" match="any">
           <text macro="author" suffix=". "/>
           <text macro="title"/>
