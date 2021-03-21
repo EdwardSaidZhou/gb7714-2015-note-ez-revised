@@ -183,7 +183,7 @@
     <layout locale="en" suffix="." delimiter="; ">
       <choose>
         <if position="ibid-with-locator">
-          <text term="ibid" prefix=", "/>
+          <text term="ibid" suffix=", "/>
           <label variable="locator" form="short"/>
           <text variable="locator"/>
         </if>
