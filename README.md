@@ -2,15 +2,15 @@
 gb7714-2015-note 自行修改的国标脚注版
 
 主要修改内容：
-1、根据之前制作的几个样式，采取正则替换的方式，详细分类
-2、单独的报纸样式，和之前的区别：添加完整日期
-3、单独的会议论文，可以显示会议名称、地点
-4、单独的网页，这个是重点：我在使用之前的国标引文格式的时候发现，如果网页资源有作者的话，就会显示作者而不显示网页标题，而作者为空的时候，则作者、网页标题都不会显示，这次的修改内容，是将有作者的网页资源显示作者，作者为空时则用网页标题替代作者，这样在使用文献管理软件的时候更方便
-5、不输出DOI
-6、因为进行详细分类，除了在线资源外不输出URL
+1. 根据之前制作的几个样式，采取正则替换的方式，详细分类
+2. 单独的报纸样式，和之前的区别：添加完整日期
+3. 单独的会议论文，可以显示会议名称、地点
+4. 单独的网页，这个是重点：我在使用之前的国标引文格式的时候发现，如果网页资源有作者的话，就会显示作者而不显示网页标题，而作者为空的时候，则作者、网页标题都不会显示，这次的修改内容，是将有作者的网页资源显示作者，作者为空时则用网页标题替代作者，这样在使用文献管理软件的时候更方便
+5. 不输出DOI
+6. 因为进行详细分类，除了在线资源外不输出URL
 
 输出示例：
-1. Anonymous. Nixon to Kissinger[Z](1969–02–01).
+1. Anonymous. Nixon to Kissinger[Z]. (1969–02–01).
 2. R. S. SCHFIELD. The Impact of Scarcity and Plenty on Population Change in England[M]. R. I. ROTBERG, T. K. RABB, ed. by//Hunger and History: The Impact of Changing Food Production and Consumption Pattern on Society. Cambridge, Mass.: Cambridge University Press, 1983: 55–88.
 3. Heath B. CHAMBERLAIN. On the Search for Civil Society in China[J]. 1993, 19(2): 199–215.
 4. M. POLO. The Travels of Marco Polo[M]. William MARSDEN, trans. by. Hertfordshire: Cumberland House, 1997.
